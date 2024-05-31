@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,7 +29,29 @@
     </nav>
 
     <main>
-        <h1>Producto</h1>
+        <h1>ReactJS</h1>
+
+        <div class="camisa container">
+            <img class="camisa__imagen" src="img/3.jpg" alt="Imagen Producto">
+            <div class="camisa__contenido">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolores officiis, nisi perferendis officia ea quis ex commodi dolorum laborum mollitia magnam nam aperiam nihil saepe iste veritatis quisquam in.
+                </p>
+                <form class="formulario" action="">
+                    <select class="formulario__campo" name="Talla" id="talla">
+                        <option disabled selected>--Seleccionar Talla--</option>
+                        <option>Veneco</option>
+                        <option>Pequeña</option>
+                        <option>Mediana</option>
+                        <option>Grande</option>
+                        <option>Tanque sovietico</option>
+                        <option>Tu Mama</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                    <input class="formulario__submit" type="submit" value="Agregar Al Carrito">
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
