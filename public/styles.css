@@ -62,9 +62,16 @@ h3{
 /*--------------------Header--------------------------------------------*/
 .header{
     display: flex;
+    flex-direction: column;
     justify-content: start;
     background-color: white;
-    position: relative;
+    align-items: center;
+}
+@media(min-width: 768px){
+    .header{
+        flex-direction: row;
+    }
+    
 }
 .header__logo{
     margin: 0 0 3rem 0 ;
@@ -74,22 +81,21 @@ h3{
     color: var(--cafe);
     font-family: var(--fuente_Principal);
     font-weight: 700;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 0;
-    margin: 2rem;
+
+    margin: -1rem 0 1rem 0;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 @media(min-width: 768px){
     .login-label{
         position: absolute;
         right: 0;
-        bottom: 0;
-        padding-right: 4rem;
+        top: 0;
+        padding: 2rem;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
     
 }
+
 .login-label:hover{
     text-shadow: 10px 10px 8px var(--cafe);
     transform: translateY(-0.1em);
@@ -304,3 +310,4 @@ h3{
     font-size: 2.1rem;
     background-color: var(--verde);
 }
+/*---------------------------------------------------Formulario-Login--------------------*/
