@@ -1,11 +1,20 @@
 :root{
+    --fuente_Principal: "Public Sans", sans-serif;
+
+    --verde_calro: #bade57;
+    --verde: #8ccc81;
+    --verde_oscuro: #56877d;
+    --nose: #525c5a;
+    --cafe: #4d433d;
+    --claro: #e8f1e3;
+    --muy_claro: #f0f9ce;
+
     --oscurito: #22272f;
     --no_tan_oscurito:#394553;
     --clarito:#657b92;
     --mas_clarito:#afbcca;
     --amarillo: #f5c273;
     --rosa:#e75a7a;
-    --verde:#72bca5;
 }
 html{
     box-sizing: border box;
@@ -16,14 +25,14 @@ html{
 }
 /*---------------------------Globales---------------------------------*/
 body{
-    background-color: var(--oscurito);
+    background-color: var(--muy_claro);
     font-size: 1.6rem;
     line-height: 1.5;
 }
 p{
     font-size: 1.8rem;
     font-weight: normal;
-    color: var(--mas_clarito);
+    color: var(--amarillo);
 }
 a{
     text-decoration: none;
@@ -38,8 +47,8 @@ img{
 }
 h1, h2, h3{
     text-align: center;
-    color: #657b92;
-    font-family: Lobster;
+    color: var(--nose);
+    font-family: var(--fuente_Principal);
 }
 h1{
     font-size: 4rem;
@@ -53,22 +62,41 @@ h3{
 /*--------------------Header--------------------------------------------*/
 .header{
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    background-color: white;
 }
 .header__logo{
     margin: 0 0 3rem 0 ;
+    height: 20rem;
 }
+.login-label{
+    color: var(--cafe);
+    font-family: var(--fuente_Principal);
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    padding-right: 4rem;
+    margin: 2rem;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.login-label:hover{
+    text-shadow: 10px 10px 8px var(--cafe);
+    transform: translateY(-0.1em);
+    top: -0.2em;
+}
+
 /*--------------------navigation---------------------------------------*/
 .navigation{
-    background-color: var(--no_tan_oscurito);
+    background-color: var(--cafe);
     padding: 0 0 ;
     display: flex;
     justify-content: center;
     gap: 3rem;
 }
 .navigation__link{
-    font-family: "Jaro", sans-serif;
-    color: var(--mas_clarito);
+    font-family: var(--fuente_Principal);
+    font-weight: 800;
+    color: var(--verde_calro);
     font-size: 3rem;
 }
 
@@ -78,7 +106,7 @@ h3{
 }
 /*-------------------footer--------------------------------------------------*/
 .footer{
-    background-color: var(--no_tan_oscurito);
+    background-color: var(--cafe);
     padding: 1rem 0;
     margin-top: 2rem;
 }
@@ -108,11 +136,6 @@ h3{
 .product{
     background-color: var(--no_tan_oscurito);
     border-radius: 2rem;
-    
-
-}
-.product:hover{
-    
 }
 .product__img{
     border-radius: 2rem;
