@@ -138,11 +138,15 @@ h3{
 }
 /*-------------------footer--------------------------------------------------*/
 .footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     background-color: var(--cafe);
     padding: 1rem 0;
     margin-top: 2rem;
 }
 .footer__text{
+    color: var(--verde_calro);
     text-align: center;
     font-family: "Jaro", sans-serif;
 }
@@ -311,3 +315,67 @@ h3{
     background-color: var(--verde);
 }
 /*---------------------------------------------------Formulario-Login--------------------*/
+.Sobre-nosotros{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.rellenar{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.contacto-bg{
+    height: 10rem;
+
+}
+.formulario{
+    margin: -5rem auto 0 auto;
+    padding: 0 2rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+    width: auto;
+}
+.campo-label{
+    color: var(--cafe);
+    font-weight: 500;
+    font-size: 2rem;
+    height: 3rem;
+    flex: 0 0 9rem;
+}
+.campo-field{
+    padding: 1rem;
+    height: 3rem;
+    width: auto;
+    border-radius: 1rem;
+    flex: 1;
+    border: 1px solid gray;
+}
+.boton-enviar{
+    background-color: var(--cafe);
+    color: var(--verde_calro);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    transition: padding .5s ease, font-weight .5s ease;
+}
+.boton-enviar:hover{
+    cursor: pointer;
+    padding: 0.5rem 12rem;
+    font-weight: 800;
+}
+@media(min-width: 768px){
+    .formulario{
+        margin: -5rem auto 0 auto;
+        padding: 5rem;
+        width: 40rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+}
